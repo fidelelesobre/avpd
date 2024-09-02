@@ -813,36 +813,7 @@
             <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
                 <div class="row g-0" id="gallery-container">
                      <!-- Start Gallery item -->
-                    <script>
-                        // Sélectionner le conteneur où les éléments vont être ajoutés
-                        const galleryContainer = document.getElementById('gallery-container');
-                
-                        // Boucle pour créer les éléments pour les images numérotées de 1 à 100
-                        for (let i = 1; i <= 55; i++) {
-                            // Créer les éléments HTML
-                            const colDiv = document.createElement('div');
-                            colDiv.className = 'col-lg-3 col-md-4';
-                            
-                            const galleryItemDiv = document.createElement('div');
-                            galleryItemDiv.className = 'gallery-item';
-                            
-                            const link = document.createElement('a');
-                            link.href = `/assets/images/gallerie/${i}.jpg`;
-                            link.className = 'glightbox';
-                            link.setAttribute('data-gallery', 'images-gallery');
-                            
-                            const img = document.createElement('img');
-                            img.src = `/assets/images/gallerie/${i}.jpg`;
-                            img.alt = '';
-                            img.className = 'gallery-img';
-                            
-                            // Construire la hiérarchie des éléments
-                            link.appendChild(img);
-                            galleryItemDiv.appendChild(link);
-                            colDiv.appendChild(galleryItemDiv);
-                            galleryContainer.appendChild(colDiv);
-                        }
-                    </script>
+
                     <!-- End Gallery Item -->
                 </div>
             </div>
@@ -1020,6 +991,7 @@
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/purecounter_vanilla.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
