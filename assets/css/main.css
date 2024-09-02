@@ -1274,9 +1274,10 @@ section,
 }
 
 .departments .nav-link.active {
-  color: var(--default-color);
+  color: var(--contrast-color);
   border-color: var(--accent-color);
-  background-color: var(--background-color);
+  background-color: var(--accent-color);
+  padding-left: 10px;
 }
 
 .departments .tab-pane.active {
