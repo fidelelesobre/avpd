@@ -1738,3 +1738,11 @@ section,
 .favicon {
   border-radius: 50%;
 }
+
+ol li::before {
+  color: var(--accent-color);
+  content: "→"; /* Ajoute la flèche */
+  margin-right: 8px; /* Espace entre la flèche et le texte */
+  font-size: 20px; /* Taille de la flèche */
+}
+
